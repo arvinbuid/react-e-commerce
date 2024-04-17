@@ -28,12 +28,9 @@ const CartItem: React.FC<{item: Item}> = ({item}) => {
         </Link>
         <div className='w-full flex flex-col'>
           <div className='flex justify-between mb-2'>
-            <Link
-              to={`/products/${id}`}
-              className='text-sm uppercase font-medium max-w-[240px] text-primary hover:underline'
-            >
+            <div className='text-sm uppercase font-medium max-w-[240px] text-primary'>
               {title}
-            </Link>
+            </div>
             {/* remove from cart */}
             <div
               onClick={() => {
